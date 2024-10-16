@@ -115,6 +115,7 @@ const timer = () => {
 
     // カウントが0になったらタイマーを停止する
     if(time <= 0) {
+      typedfield.textContent = '';
       untypedfield.textContent = 'タイムアップ！';
       
       setTimeout(() => {
